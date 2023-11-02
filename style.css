@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    background: #21B6A8;
+    height: 8.5vh;
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.logo {
+    display: block;
+    background: #ffff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+button.logo {
+    height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    border: none;
+    line-height: 30px;
+    
+    
+}
+
+img.logo {
+    height: 30px;
+}
