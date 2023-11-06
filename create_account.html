@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="login" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <script>
+        function passwordView() {
+            const passwordInput = document.getElementById("password-input");
+            const eyeIcon = document.getElementById("eye-icon")
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.className = "fa-solid fa-eye fa-xl"
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.className = "fa-solid fa-eye-slash fa-xl"
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo">
+                <img class="logo" src="./img/logo_cjr.png"/>
+            </div>
+            <div class="navbar-buttons">
+                <a href="create_account.html">Criar Conta</a>
+                <a style="margin-right: 0px;" href="login.html">
+                    <button>Entrar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <img class="logo-main" src="./img/logo_cjr_main.png">
+        <div style="height: 70vh;" class="login-form">
+            <i class="fa-solid fa-circle-user fa-2xl"></i>
+            <div class="form-fields">
+                <form>
+                    <div class="field">
+                        <input placeholder="Login">
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password-input" placeholder="Senha">
+                        <button  type="button" onclick="passwordView()" >
+                            <i class="fa-solid fa-eye-slash fa-xl" id="eye-icon"></i>
+                        </button>
+                    </div>
+                    <div class="field">
+                        <input placeholder="Nome">
+                    </div>
+                    <div class="field">
+                        <input placeholder="Gênero">
+                    </div>
+                    <div class="field">
+                        <input placeholder="Cargo">
+                    </div>
+                </form>
+            </div>
+            <a>
+                Já possui uma conta? Acesse aqui
+            </a>
+            <button class="login-button">
+                Cadastrar
+            </button>
+        </div>
+    </div>
+</body>
+</html>

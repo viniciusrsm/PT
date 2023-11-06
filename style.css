@@ -1,39 +1,88 @@
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    --primary-color-dark: #001830;
+    --primary-color-light: #ECF3FB;
+    --secondary-color-dark: #23424A;
+    --secondary-color-light: #EAEFF2;
+    --nav-color: #27BD80;
+
 }
 
-nav {
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color-light);
+    text-decoration: none;
+    
+}
+
+body {
+    
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--nav-color);
+    height: 8.5vh;
+}
+
+.navbar-wrapper {
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    background: #21B6A8;
-    height: 8.5vh;
+}
+
+a {
+    cursor: pointer;
+}
+
+div {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
 }
 
 button {
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
+    border: none;
 }
 
 .logo {
     display: block;
     background: #ffff;
-    padding: 5px 15px;
+    padding: 3px 15px;
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
 }
 
+.navbar-buttons a {
+    color: var(--primary-color-dark);
+    font-weight: 800;
+    margin-right: 25px;
+}
+
+.navbar-buttons button {
+    color: var(--primary-color-light);
+    background-color: var(--primary-color-dark);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
 button.logo {
     height: 44px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px 30px;
     border-radius: 15px;
     border: none;
     line-height: 30px;
@@ -43,4 +92,121 @@ button.logo {
 
 img.logo {
     height: 30px;
+}
+
+.logo-main {
+    width: 35%;
+    height: fit-content
+}
+
+.page-content {
+    background-color: #001830;
+    position: absolute;
+    top: 8.5vh;
+    bottom: 0;
+    width: calc(100% - 100px);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10vw;
+    padding: 0px 50px;
+    padding-top: 0px;
+}
+
+
+
+.login-form {
+    background-color: var(--secondary-color-light);
+    height: 60vh;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px
+}
+
+.login-form i {
+    color: var(--primary-color-dark);
+    font-size: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.form-fields {
+    height: fit-content;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+    
+}
+
+.login-form a {
+    color: var(--primary-color-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.login-button {
+    color: var(--primary-color-light);
+    
+    width: 35%;
+    background-color: var(--primary-color-dark);
+    border: 1px solid var(--primary-color-dark);
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    
+}
+
+.login-form form {
+    
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+    
+}
+
+.field {
+    height:40px;
+    width: 70%;
+    background-color: var(--primary-color-light);
+    border: 1px solid var(--secondary-color-dark);
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: var(--primary-color-dark);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.field input::placeholder {
+    color: var(--primary-color-dark);
+    opacity: 70%;
+    font-weight: 600;
+}
+
+.field i {
+    font-size: larger;
+    height: fit-content;
+    color: var(--primary-color-dark);
+    margin: 0;
 }
