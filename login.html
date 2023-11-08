@@ -27,46 +27,50 @@
 
 </head>
 <body>
-    
-    <div class="navbar">
-        <div class="navbar-wrapper">
-            <div class="logo">
-                <img class="logo" src="./img/logo_cjr.png"/>
+    <header>
+        <div class="navbar">
+            <div class="navbar-wrapper">
+                <div class="logo">
+                    <img class="logo" src="./img/logo_cjr.png"/>
+                </div>
+                <div class="navbar-buttons">
+                    <a href="create_account.html">Criar Conta</a>
+                    <a style="margin-right: 0px;" href="login.html">
+                        <button>Entrar</button>
+                    </a>
+                </div>
             </div>
-            <div class="navbar-buttons">
-                <a href="create_account.html">Criar Conta</a>
-                <a style="margin-right: 0px;" href="login.html">
-                    <button>Entrar</button>
+        </div>
+    </header>
+    <section>
+        <div class="page-content">
+            <div class="login-form">
+                <i class="fa-solid fa-circle-user fa-2xl"></i>
+                <div class="form-fields">
+                    <form>
+                        <div class="field">
+                            <i class="fa-solid fa-user fa-lg"></i>
+                            <input placeholder="Login">
+                        </div>
+                        <div class="field">
+                            <i class="fa-solid fa-lock fa-lg"></i>
+                            
+                            <input type="password" id="password-input" placeholder="Senha">
+                            <button  type="button" onclick="passwordView()" >
+                                <i class="fa-solid fa-eye-slash fa-xl" id="eye-icon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <a>
+                    Esqueci minha senha
                 </a>
+                <button class="login-button">
+                    Entrar
+                </button>
             </div>
         </div>
-    </div>
-    <div class="page-content">
-        <div class="login-form">
-            <i class="fa-solid fa-circle-user fa-2xl"></i>
-            <div class="form-fields">
-                <form>
-                    <div class="field">
-                        <i class="fa-solid fa-user fa-lg"></i>
-                        <input placeholder="Login">
-                    </div>
-                    <div class="field">
-                        <i class="fa-solid fa-lock fa-lg"></i>
-                        
-                        <input type="password" id="password-input" placeholder="Senha">
-                        <button  type="button" onclick="passwordView()" >
-                            <i class="fa-solid fa-eye-slash fa-xl" id="eye-icon"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <a>
-                Esqueci minha senha
-            </a>
-            <button class="login-button">
-                Entrar
-            </button>
-        </div>
-    </div>
+    </section>
+    
 </body>
 </html>

@@ -27,52 +27,57 @@
 
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-wrapper">
-            <div class="logo">
-                <img class="logo" src="./img/logo_cjr.png"/>
+    <header>
+        <div class="navbar">
+            <div class="navbar-wrapper">
+                <div class="logo">
+                    <img class="logo" src="./img/logo_cjr.png"/>
+                </div>
+                <div class="navbar-buttons">
+                    <a href="create_account.html">Criar Conta</a>
+                    <a style="margin-right: 0px;" href="login.html">
+                        <button>Entrar</button>
+                    </a>
+                </div>
             </div>
-            <div class="navbar-buttons">
-                <a href="create_account.html">Criar Conta</a>
-                <a style="margin-right: 0px;" href="login.html">
-                    <button>Entrar</button>
+        </div>
+    </header>
+    <section>
+        <div class="page-content">
+            <img class="logo-main" src="./img/logo_cjr_main.png">
+            <div class="login-form">
+                <i style="cursor: pointer; margin-bottom: 25px; height: 15vh; font-size: 15vh;" class="fa-solid fa-circle-user fa-2xl"></i>
+                <div class="form-fields">
+                    <form>
+                        <div class="field">
+                            <input placeholder="Login">
+                        </div>
+                        <div class="field">
+                            <input type="password" id="password-input" placeholder="Senha">
+                            <button  type="button" onclick="passwordView()" >
+                                <i class="fa-solid fa-eye-slash fa-xl" id="eye-icon"></i>
+                            </button>
+                        </div>
+                        <div class="field">
+                            <input placeholder="Nome">
+                        </div>
+                        <div class="field">
+                            <input placeholder="Gênero">
+                        </div>
+                        <div class="field">
+                            <input placeholder="Cargo">
+                        </div>
+                    </form>
+                </div>
+                <a>
+                    Já possui uma conta? Acesse aqui
                 </a>
+                <button class="login-button">
+                    Cadastrar
+                </button>
             </div>
         </div>
-    </div>
-    <div class="page-content">
-        <img class="logo-main" src="./img/logo_cjr_main.png">
-        <div style="height: 70vh;" class="login-form">
-            <i class="fa-solid fa-circle-user fa-2xl"></i>
-            <div class="form-fields">
-                <form>
-                    <div class="field">
-                        <input placeholder="Login">
-                    </div>
-                    <div class="field">
-                        <input type="password" id="password-input" placeholder="Senha">
-                        <button  type="button" onclick="passwordView()" >
-                            <i class="fa-solid fa-eye-slash fa-xl" id="eye-icon"></i>
-                        </button>
-                    </div>
-                    <div class="field">
-                        <input placeholder="Nome">
-                    </div>
-                    <div class="field">
-                        <input placeholder="Gênero">
-                    </div>
-                    <div class="field">
-                        <input placeholder="Cargo">
-                    </div>
-                </form>
-            </div>
-            <a>
-                Já possui uma conta? Acesse aqui
-            </a>
-            <button class="login-button">
-                Cadastrar
-            </button>
-        </div>
-    </div>
+    </section>
+    
 </body>
 </html>

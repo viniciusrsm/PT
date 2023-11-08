@@ -31,12 +31,13 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--nav-color);
-    height: 8.5vh;
+    height: 10vh;
 }
 
 .navbar-wrapper {
     width: 90%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -102,7 +103,7 @@ img.logo {
 .page-content {
     background-color: #001830;
     position: absolute;
-    top: 8.5vh;
+    top: 10vh;
     bottom: 0;
     width: calc(100% - 100px);
     justify-content: center;
@@ -110,27 +111,27 @@ img.logo {
     flex-direction: row;
     align-items: center;
     column-gap: 10vw;
-    padding: 0px 50px;
-    padding-top: 0px;
+    padding: 25px 50px;
+    
 }
 
 
 
 .login-form {
     background-color: var(--secondary-color-light);
-    height: 60vh;
-    width: 700px;
+    height: calc(100% - 50px);
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0px
+    padding: 25px 0px
 }
 
 .login-form i {
     color: var(--primary-color-dark);
-    font-size: 170px;
-    height: 170px;
+    font-size: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     margin-bottom: 60px;
@@ -146,9 +147,10 @@ img.logo {
 
 .login-form a {
     color: var(--primary-color-dark);
+    font-size: 16px;
     font-weight: 600;
     text-decoration: underline;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .login-button {
@@ -170,12 +172,12 @@ img.logo {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 15px;
     
 }
 
 .field {
-    height:40px;
+    height:32px;
     width: 70%;
     background-color: var(--primary-color-light);
     border: 1px solid var(--secondary-color-dark);
@@ -194,7 +196,7 @@ img.logo {
     outline: none;
     background-color: inherit;
     color: var(--primary-color-dark);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
